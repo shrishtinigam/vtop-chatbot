@@ -1,0 +1,133 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello! Welcome to VTOP!", "Good to see you again!", "Hi there, how can I help?", "Good day! What can I do for you today?", "Greetings! How can I assist?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more information", "Not sure I understand", "Sorry, I didn't get that. Can you rephrase?", "Sorry, I don't understand. Can you rephrase?"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through VTOP web portal!", "Offering support for VTOP web portal!"],
+         "context": [""]
+        },
+        {"tag": "my_info",
+         "patterns": ["How to my check profile?", "credentials", "dayboarder", "acknowledgment View", "student bank info", "Digital ID Card", "Icard", "Exam Credentials", "Registration Details", "Winter Sem Registration Details", "LMS Credentials"],
+         "responses": ["Navigate to My Info tab on the left side of the screen to find information about that!"],
+         "context": [""]
+        },
+        {"tag": "info_corner",
+         "patterns": ["Frequently asked questions", "FAQ", "Spotlight", "Circulars" ],
+         "responses": ["Navigate to Info Corner tab on the left side of the screen to find information about that!"],
+         "context": [""]
+        },
+        {"tag": "proctor",
+         "patterns": ["Proctor", "Who is my proctor?", "who is my faculty adviser"],
+         "responses": ["Navigate to Proctor on the left side of the screen to find information about that!"],
+         "context": [""]
+        },
+        {"tag": "academics",
+                "patterns": ["HOD info", "hod", "dean info", "dean", "biometric", "class messages", "regulation", "my curriculum", "minor", "honour", "time table", "course option change", "course withdraw", "class attendance", "attendance", "course page", "industrial intership", "project", "digital assignment upload", "qcm view", "set conference registration", "co-extra curricular", "wishlist registration", "academic calendar" ],
+                "responses": ["Navigate to Academics tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "research",
+         "patterns": ["my reasearch profile", "SEM request", "course work registration", "registration status", "meeting info", "research attendance view", "scholar leave request", "research letters"],
+         "responses": ["Navigate to Research tab on the left side of the screen to find information about that!"],
+         "context": [""]
+        },
+        {"tag": "examination",
+                "patterns": ["exam schedule", "marks", "grades", "paper see", "paper rev", "grade history","project file upload", "mooc file upload", "eca file", "eca file upload", "comprehensive exam", "comprehensive question preview", "comprehensive exam information", "arrear details", "regular arrear", "re-exam", "reexam", "reexam application", "re exam application"],
+                "responses": ["Navigate to Examination tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "services",
+                "patterns": ["pat registration", "online book recommendation", "transcript request", "financial assistance scholarship", "achievements", "programme migration", "late hour request", "final year registration", "sap application", "fresher certificate", "course feedback 24x7", "course feedback"],
+                "responses": ["Navigate to Services tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "library",
+                "patterns": ["library", "library scanning request", "scanning request", "my keys", "books" ],
+                "responses": ["Navigate to Library tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "bonafide",
+                "patterns": ["apply bonafide", "bonafide"],
+                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "online_payments",
+                "patterns": ["payments", "payment receipts", "receipts", "fees", "fees intimation", "online transfer", "library"],
+                "responses": ["Navigate to Online Payments tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "hostels",
+                "patterns": ["online hostel booking", "book room", "book hostel room", "my hostel room", "my room information", "leave request", "hostel leave request", "hostel", "mess selection", "mess change", "room details"],
+                "responses": ["Navigate to Hostels tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "receipt_book",
+                "patterns": ["external billing", "my collection report", "internal billing", "billing" ],
+                "responses": ["Navigate to Receipt Book tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "not",
+                "patterns": ["", "", "", "", "" ],
+                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "not",
+                "patterns": ["", "", "", "", "" ],
+                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "not",
+                "patterns": ["", "", "", "", "" ],
+                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+                "context": [""]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
