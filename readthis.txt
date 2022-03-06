@@ -1,0 +1,5 @@
+To run the code, first download the zip file. 
+Change directory into .../vtop-chatbot
+Run .\scripts\activate.bat
+Run python train_bot.py
+Run python gui.py
