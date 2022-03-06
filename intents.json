@@ -1,11 +1,11 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
          "responses": ["Hello! Welcome to VTOP!", "Good to see you again!", "Hi there, how can I help?", "Good day! What can I do for you today?", "Greetings! How can I assist?"],
          "context": [""]
         },
         {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "Ok bye"],
          "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
          "context": [""]
         },
@@ -20,9 +20,14 @@
          "context": [""]
         },
         {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through VTOP web portal!", "Offering support for VTOP web portal!"],
+         "patterns": ["How you could me?", "What you can do?", "What you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through VTOP web portal!", "Offering support for VTOP web portal!", "I can help you navigate VTOP!"],
          "context": [""]
+        },
+        {"tag": "contact",
+                "patterns": ["contact dean academics", "email dean academics", "email admissions", "contact admissions", "email accounts", "contact accounts", "email accounts office", "contact office", "email academic staff", "contact academic staff", "email technical support", "contact technical support", "email physical education", "contact physical education", "email electrical maintenance", "contact electrical maintenance",  "email guest house", "contact guest house", "email general maintainance", "contact general maintainance", "email", "contact"],
+                "responses": ["Navigate to Contact Us tab on the left side of the screen to find information about that!"],
+                "context": [""]
         },
         {"tag": "my_info",
          "patterns": ["How to my check profile?", "credentials", "dayboarder", "acknowledgment View", "student bank info", "Digital ID Card", "Icard", "Exam Credentials", "Registration Details", "Winter Sem Registration Details", "LMS Credentials"],
@@ -36,7 +41,7 @@
         },
         {"tag": "proctor",
          "patterns": ["Proctor", "Who is my proctor?", "who is my faculty adviser"],
-         "responses": ["Navigate to Proctor on the left side of the screen to find information about that!"],
+         "responses": ["Navigate to Proctor tab on the left side of the screen to find information about that!"],
          "context": [""]
         },
         {"tag": "academics",
@@ -66,11 +71,11 @@
         },
         {"tag": "bonafide",
                 "patterns": ["apply bonafide", "bonafide"],
-                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+                "responses": ["Navigate to Bonafide tab on the left side of the screen to find information about that!"],
                 "context": [""]
         },
         {"tag": "online_payments",
-                "patterns": ["payments", "payment receipts", "receipts", "fees", "fees intimation", "online transfer", "library"],
+                "patterns": ["payments", "payment receipts", "receipts", "fees", "fees intimation", "online transfer", "library payment", "dues", "library dues"],
                 "responses": ["Navigate to Online Payments tab on the left side of the screen to find information about that!"],
                 "context": [""]
         },
@@ -80,54 +85,24 @@
                 "context": [""]
         },
         {"tag": "receipt_book",
-                "patterns": ["external billing", "my collection report", "internal billing", "billing" ],
+                "patterns": ["external billing", "my collection report", "internal billing", "billing", "receipts", "my receipts"],
                 "responses": ["Navigate to Receipt Book tab on the left side of the screen to find information about that!"],
                 "context": [""]
         },
-        {"tag": "not",
-                "patterns": ["", "", "", "", "" ],
-                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+        {"tag": "asc_fdp",
+                "patterns": ["asc fdp", "fdp registration", "participant certificate"],
+                "responses": ["Navigate to ASC FDP tab on the left side of the screen to find information about that!"],
                 "context": [""]
         },
-        {"tag": "not",
-                "patterns": ["", "", "", "", "" ],
-                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+        {"tag": "events",
+                "patterns": ["events", "university day", "special event", "festival", "fest" ],
+                "responses": ["Navigate to Events tab on the left side of the screen to find information about that!"],
                 "context": [""]
         },
-        {"tag": "not",
-                "patterns": ["", "", "", "", "" ],
-                "responses": ["Navigate to _______ tab on the left side of the screen to find information about that!"],
+        {"tag": "my_account",
+                "patterns": ["change password", "change vtop password", "password", "update login id", "login id" ],
+                "responses": ["Navigate to My Account tab on the left side of the screen to find information about that!"],
                 "context": [""]
-        },
-        {"tag": "search_blood_pressure_by_patient_id",
-         "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient"],
-         "context": [""]
-        },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
-        },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
-         "context": [""]
-        },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
-        },
-        {"tag": "search_hospital_by_params",
-         "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
-        },
-        {"tag": "search_hospital_by_type",
-         "patterns": [],
-         "responses": ["Loading hospital details"],
-         "context": [""]
         }
    ]
 }
